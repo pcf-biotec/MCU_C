@@ -1,0 +1,60 @@
+CCS PCM C Compiler, Version 4.078, 5967               19-abr-17 21:18
+
+               Filename: olah_mund.lst
+
+               ROM used: 47 words (2%)
+                         Largest free fragment is 2001
+               RAM used: 7 (3%) at main() level
+                         7 (3%) worst case
+               Stack:    1 locations
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   013
+0003:  NOP
+.................... /* Tabauda do 7 
+....................    kuma 
+....................    17.04.2017 */ 
+.................... #include <16f628a.h> 
+.................... //////// Standard Header file for the PIC16F628A device //////////////// 
+.................... #device PIC16F628A 
+.................... #list 
+....................  
+.................... #use delay(clock=8000000) 
+.................... #use RS232(baud=9600, xmit=pin_b2, rcv=pin_b1) 
+.................... #fuses hs, nolvp, noprotect, nobrownout, nowdt 
+.................... void main(){ 
+0013:  CLRF   04
+0014:  BCF    03.7
+0015:  MOVLW  1F
+0016:  ANDWF  03,F
+0017:  MOVLW  0C
+0018:  BSF    03.5
+0019:  MOVWF  19
+001A:  MOVLW  A2
+001B:  MOVWF  18
+001C:  MOVLW  90
+001D:  BCF    03.5
+001E:  MOVWF  18
+001F:  MOVLW  07
+0020:  MOVWF  1F
+....................    printf ("olah mundo"); 
+0021:  CLRF   21
+0022:  MOVF   21,W
+0023:  CALL   004
+0024:  INCF   21,F
+0025:  MOVWF  77
+0026:  MOVF   77,W
+0027:  BTFSS  0C.4
+0028:  GOTO   027
+0029:  MOVWF  19
+002A:  MOVLW  0A
+002B:  SUBWF  21,W
+002C:  BTFSS  03.2
+002D:  GOTO   022
+.................... } 
+002E:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F22   HS NOWDT PUT NOPROTECT NOBROWNOUT MCLR NOLVP NOCPD

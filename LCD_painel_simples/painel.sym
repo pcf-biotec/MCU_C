@@ -1,0 +1,84 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015-016 CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020.0   tbot1
+020.1   tbot2
+020.2   tbot3
+020.3   eb1
+020.4   eb2
+020.5   eb3
+021     lcd_ini.conta
+021     inicia_lcd.@SCRATCH1
+021     tb1.@SCRATCH1
+021     tb2.@SCRATCH1
+021     tb3.@SCRATCH1
+021     imprime.@SCRATCH1
+022     lcd_escreve.c
+022     lcd_ini.@SCRATCH1
+023     lcd_pos_xy.x
+023     @delay_ms1.P1
+024     lcd_pos_xy.y
+025     lcd_pos_xy.endereco
+026     lcd_pos_xy.@SCRATCH1
+027     lcd_envia_byte.endereco
+028     lcd_envia_byte.dado
+029     lcd_envia_byte.@SCRATCH1
+02A     lcd_envia_nibble.dado
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+0027  @delay_ms1
+0004  INI_LCD
+003B  lcd_envia_nibble
+0062  lcd_envia_byte
+00BD  lcd_ini
+0083  lcd_pos_xy
+0095  lcd_escreve
+00BD  inicia_lcd
+000C  @const74
+0012  @const75
+0114  tb1
+0129  tb2
+013E  tb3
+0153  imprime
+01B1  MAIN
+01B1  @cinit
+
+Project Directory:
+    C:\Users\Pedro Cavalcante\Desktop\PICa\Programms\LCD_painel_simples\
+
+Project Files:
+    painel.c
+    config_pic.c
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\16f628a.h
+    lcd_r.c
+
+Units:
+    C:\Users\Pedro Cavalcante\Desktop\PICa\Programms\LCD_painel_simples\painel.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F628A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      painel.err
+    Ext Symbols: painel.esym
+    INHX8:       painel.hex
+    Symbols:     painel.sym
+    List:        painel.lst
+    Debug/COFF:  painel.cof
+    Project:     painel.PJT
+    Call Tree:   painel.tre
+    Statistics:  painel.sta

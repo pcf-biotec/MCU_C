@@ -1,0 +1,48 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+021     main.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+10D-10E @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+00AB  @delay_ms1
+0013  main
+0004  @const57
+0013  @cinit
+
+Project Directory:
+    C:\Users\Pedro Cavalcante\Desktop\PICa\Programms\citacao\
+
+Project Files:
+    olah_mund.c
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\16f628a.h
+
+Units:
+    olah_mund.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F628A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      olah_mund.err
+    Ext Symbols: olah_mund.esym
+    INHX8:       olah_mund.hex
+    Symbols:     olah_mund.sym
+    List:        olah_mund.lst
+    Debug/COFF:  olah_mund.cof
+    Project:     olah_mund.PJT
+    Call Tree:   olah_mund.tre
+    Statistics:  olah_mund.sta
