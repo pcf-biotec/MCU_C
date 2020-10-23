@@ -1,0 +1,5 @@
+>>> Warning 203 "Oficial.c" Line 338(1,1): Condition always TRUE
+>>> Warning 203 "Oficial.c" Line 1922(1,1): Condition always TRUE
+>>> Warning 216 "Oficial.c" Line 1941(0,1): Interrupts disabled during call to prevent re-entrancy:  (escreve_EEPROM)
+      Memory usage:   ROM=81%      RAM=21% - 25%
+      0 Errors,  3 Warnings.

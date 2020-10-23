@@ -1,0 +1,199 @@
+
+ROM used: 6674 (81%)
+          7889 (96%) including unused fragments
+
+          3 Average locations per line
+          6 Average locations per statement
+
+RAM used: 76 (21%) at main() level
+          93 (25%) worst case
+
+Stack used: 8 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+ 1951  1121  93  teste_bluetooth.c
+  330     0   0  ..\..\..\..\..\PICC\devices\16f877a.h
+  217    82   7  lcd_r.c
+----- -----
+ 2498  1203 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     20   0   1             @delay_ms1
+1     69   1   3             @I2C_READ_1
+1     74   1   1             @I2C_WRITE_1
+0      8   0   0             @const74
+ Inline        1   260  1.9  lcd_envia_nibble
+0    120   2   3   176  2.7  lcd_envia_byte
+ Inline        2   433  4.3  lcd_ini
+0     18   0   4   186  5.5  lcd_pos_xy
+0      6   0   1    35  1.4  cgram
+ Inline        2    55  2.3  cgram_x
+0     66   1   1   546  2.3  lcd_escreve
+0    198   3   1   216  1.8  inicializa
+0      1   0   0             @const172
+0     70   1   3             @PSTRINGC7_96
+0      1   0   0             @const174
+0      1   0   0             @const175
+0     93   1   2   574  3.8  apresentacao
+0      9   0   0             @const178
+0      9   0   0             @const179
+0      4   0   0             @const180
+0      1   0   0             @const181
+0    134   2   1   567  4.3  ativa_CGRAM
+0     22   0   0   152  1.8  timers
+0    279   4   1   282  1.9  escreve_EEPROM
+0    181   3   0   609  2.4  leitura_EEPROM
+0     39   1   0   329  4.1  LUGH_LIGHT2
+ Inline        1   660  5.7  LUGH_LIGHT
+1     97   1   0   188  1.8  le_hora_rtc
+1     62   1   0   114  1.3  escreve_hora_rtc
+ Inline        0   188  1.8  le_data_rtc
+ Inline        0   114  1.3  escreve_data_rtc
+1     57   1   0    74  1.2  escreve_sem_rtc
+1    237   4   2   636  5.1  le_sem_rtc
+0      8   0   0             @const194
+0      8   0   0             @const195
+0      8   0   0             @const196
+0      8   0   0             @const197
+0      8   0   0             @const198
+0      8   0   0             @const199
+0      8   0   0             @const200
+1     11   0   0             @goto10457
+ Inline        0   593  5.7  ronda_noturna_auto
+ Inline        0   145  3.4  corredor
+ Inline        0   172  3.5  maquinas
+ Inline        0   145  3.4  retifica
+ Inline        0   143  3.3  ronda_noturna
+ Inline        0   786  3.3  imprime_setor
+ Inline        3   243  2.7  regula_setorizado
+ Inline        0    66  1.3  comanda_setor
+1    327   5   0   202  3.0  setorizado
+0      1   0   0             @const219
+0      9   0   0             @const220
+ Inline        0   179  3.9  navegador_seta
+ Inline        0   119  3.3  circuito_1
+ Inline        0   119  3.3  circuito_2
+ Inline        0   119  3.3  circuito_3
+ Inline        0   119  3.3  circuito_4
+ Inline        0   119  3.3  circuito_5
+ Inline        0   119  3.3  circuito_6
+ Inline        0   119  3.3  circuito_7
+0     77   1   1   665  3.4  imprime_um_a_quatro
+0     77   1   1   665  3.4  imprime_cinco_a_oito
+ Inline        0   321  3.1  um_a_quatro
+ Inline        0   321  3.1  cinco_a_oito
+ Inline        0   165  3.4  comanda_individual
+1    269   4   0   265  3.1  individual
+0      1   0   0             @const237
+0      9   0   0             @const238
+0      9   0   0             @const239
+ Inline        0   383  3.6  mostra_horario
+0     14   0   0             @const241
+1     37   1   2             @PRINTF_X_96
+ Inline        2             @PSTRINGR_96
+1     83   1   4             @PSTRINGCN7_96
+0     14   0   0             @const248
+1    362   5   0   404  3.2  clock
+0      1   0   0             @const250
+0     14   0   0             @const251
+0     14   0   0             @const252
+ Inline        0   588  5.6  estado_bluetooth
+0      8   0   0             @const254
+0      8   0   0             @const255
+0      9   0   0             @const256
+0      9   0   0             @const257
+1    102   2   0   145  1.8  bluetooth
+1     55   1   0   630  5.7  navegador_config_inicial
+ Inline        1   731  6.1  soma_decrementa_minuto
+0      1   0   0             @const261
+0      7   0   0             @const262
+ Inline        3             @DIV88
+1     97   1   2             @PRINTF_U_96
+ Inline        1   737  6.1  soma_decrementa_hora
+0      1   0   0             @const273
+0      6   0   0             @const274
+2    482   7   2  1865  8.3  soma_decrementa_dia_semana
+0      1   0   0             @const279
+0      8   0   0             @const281
+2     11   0   0             @goto11249
+2     11   0   0             @goto11303
+ Inline        1   737  6.1  soma_decrementa_dia
+0      1   0   0             @const302
+0      6   0   0             @const303
+ Inline        1   737  6.1  soma_decrementa_mes
+0      1   0   0             @const308
+0      6   0   0             @const309
+ Inline        1   766  6.2  soma_decrementa_ano
+0      1   0   0             @const314
+0      6   0   0             @const315
+ Inline        0   233  3.1  inverno
+0      1   0   0             @const320
+0      9   0   0             @const321
+0      9   0   0             @const322
+ Inline        0   233  3.1  verao
+0      1   0   0             @const324
+0      9   0   0             @const325
+0      9   0   0             @const326
+ Inline        0   233  3.1  senai
+0      1   0   0             @const328
+0      9   0   0             @const329
+0      9   0   0             @const330
+ Inline        1   641  7.4  ronda_pre_programada
+0      1   0   0             @const332
+0      8   0   0             @const333
+0      9   0   0             @const334
+ Inline        1   584  4.7  liga_desliga
+0      1   0   0             @const336
+0      9   0   0             @const337
+0      9   0   0             @const338
+0      9   0   0             @const339
+2    255   4   3   191  4.1  d2h
+ Inline        2             @ITOF
+ Inline       13             @MULFF
+ Inline        4             @SFTOI
+ Inline        2             @MUL88
+ Inline        1  3096  4.9  comanda_relogio
+ Inline        0   318  3.2  relogio
+0      1   0   0             @const356
+0      7   0   0             @const357
+0      6   0   0             @const358
+ Inline        1  1024  4.9  comanda_ronda
+ Inline        0   300  3.1  config_noturna
+0      1   0   0             @const361
+0      7   0   0             @const362
+0      8   0   0             @const363
+ Inline        1   467  6.6  configuracao_ativa
+3   1745  26   0   325  3.2  configura
+0      1   0   0             @const366
+0      8   0   0             @const367
+0     38   1   0   378  5.1  navegador_menus
+0     79   1   0   110  2.9  TIMER1_eeprom_rdn
+0     63   1   0   125  3.0  RTCC_isr
+2    189   3   0   410  4.2  MAIN
+2      9   0   0             @goto11811
+
+Program metrics:
+    Functions               71
+    Statements              1203
+    Comments                365
+    Volume (V)              58280
+    Difficilty (D)          254.8
+    Effort to implement (E) 14847506
+    Time to implement (T)   229 hours, 8 minutes
+    Est Delivered Bugs (B)  20
+    Cyclomatic Complexity   198
+    Maintainability (MI)    71
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00037    52  0  
+00038-007FF  1977  15  
+00800-00FFF  1939  109  
+01000-017FF   957  1091  
+01800-01FFF  1745  303  
+
+
+

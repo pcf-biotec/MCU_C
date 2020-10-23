@@ -1,0 +1,21 @@
+[PROJECT]
+Target=Oficial.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.007
+Compiler=PCM
+[Target Data]
+FileList=Oficial.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;H:\Arquivos\Projeto\programação C\menu_novo\Oficial\
+[Oficial.c]
+Type=4
+[mru-list]
+1=Oficial.c
+[Opened Files]
+1=Oficial.c
+2=
+3=..\tentativa_final\arrumando_erros\arrumando_erros.c
+4=
+[Units]
+Count=1
+1=Oficial (main)

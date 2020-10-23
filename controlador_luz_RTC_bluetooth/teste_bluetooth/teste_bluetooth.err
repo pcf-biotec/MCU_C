@@ -1,0 +1,5 @@
+>>> Warning 203 "teste_bluetooth.c" Line 349(1,1): Condition always TRUE
+>>> Warning 203 "teste_bluetooth.c" Line 1933(1,1): Condition always TRUE
+>>> Warning 216 "teste_bluetooth.c" Line 1952(0,1): Interrupts disabled during call to prevent re-entrancy:  (escreve_EEPROM)
+      Memory usage:   ROM=81%      RAM=21% - 25%
+      0 Errors,  3 Warnings.
